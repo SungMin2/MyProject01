@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.administrator.myproject01">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <!-- 중략 -->
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/mainlogo1"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/mainlogo1"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MapsActivity"
+            android:label="@string/title_activity_maps" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".Search"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Setting"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Notice"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Share" />
+        <activity android:name=".DateChoice" />
+        <activity android:name=".AreaChoice" />
+        <activity
+            android:name=".Dowhat_movie"
+            android:theme="@style/AppTheme.Fullscreen" />
+        <activity
+            android:name=".Dowhat_trip"
+            android:theme="@style/AppTheme.Fullscreen" />
+        <activity
+            android:name=".Dowhat_show"
+            android:theme="@style/AppTheme.Fullscreen" />
+        <activity
+            android:name=".Dowhat_festival"
+            android:theme="@style/AppTheme.Fullscreen" />
+        <activity
+            android:name=".Dowhat_sport"
+            android:theme="@style/AppTheme.Fullscreen" />
+        <activity
+            android:name=".Dowhat_shop"
+            android:theme="@style/AppTheme.Fullscreen" />
+        <activity
+            android:name=".Dowhat_heal"
+            android:theme="@style/AppTheme.Fullscreen" />
+        <activity
+            android:name=".Dowhat_food"
+            android:theme="@style/AppTheme.Fullscreen" />
+        <activity
+            android:name=".Dowhat_hotel"
+            android:theme="@style/AppTheme.Fullscreen" />
+        <activity
+            android:name=".Eatwhat_hansik"
+            android:theme="@style/AppTheme.Fullscreen" />
+        <activity
+            android:name=".Eatwhat_ilsik"
+            android:theme="@style/AppTheme.Fullscreen" />
+        <activity
+            android:name=".Eatwhat_yangsik"
+            android:theme="@style/AppTheme.Fullscreen" />
+        <activity
+            android:name=".Eatwhat_joongsik"
+            android:theme="@style/AppTheme.Fullscreen" />
+        <activity android:name=".Hansik_view" />
+        <activity android:name=".Ilsik_view" />
+        <activity android:name=".Joongsik_view" />
+        <activity android:name=".Yangsik_view" />
+        <activity android:name=".Movie_view" />
+        <activity android:name=".Thisweek_view" />
+        <activity
+            android:name=".IntroActivity"
+            android:theme="@style/AppTheme.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Map_fragment1" />
+        <activity android:name=".Map_fragment2"></activity>
+    </application>
+
+</manifest>
